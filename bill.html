@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parking Bill</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+      }
+
+      header {
+        background: #e73a67;
+        padding: 20px 0;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 800px;
+      }
+
+      nav img {
+        background-color: #fff;
+      }
+
+      nav h1 {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .billing {
+        background: white;
+        border: 1px solid #ccc;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .billing p {
+        margin: 10px 0;
+        font-size: 18px;
+        color: #333;
+      }
+
+      .billing span {
+        font-weight: bold;
+      }
+
+      img {
+        height: 100px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img src="parkinglogo-removebg-preview.png" alt="Logo" />
+        </a>
+        <h1>KIT's College of Engineering Kolhapur</h1>
+      </nav>
+    </header>
+
+    <section class="billing">
+      <p>No <span id="parkingno"></span></p>
+      <p>To <span id="customername"></span></p>
+      <p>Contact No <span id="contactno"></span></p>
+      <p>Vehicle Number <span id="vehiclenumber"></span></p>
+      <p>Month <span id="month"></span></p>
+      <p>Bill Amount <span id="bill"></span></p>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

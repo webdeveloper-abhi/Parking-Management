@@ -1,0 +1,186 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and page background */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Header styles */
+nav {
+  background: #0e325c;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 4%;
+}
+
+nav img {
+  width: 150px;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+}
+
+.nav-links ul li a {
+  color: #eee;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-links ul li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+}
+
+.nav-links ul li a:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+
+/* H1 styles */
+h1 {
+  text-align: center;
+  background: #3a87bb;
+  color: white;
+  padding: 20px;
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px;
+  padding: 20px;
+}
+
+.parkingform {
+  width: 48%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Form styles */
+.parkingform h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.parkingform form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.radio-group input[type="radio"] {
+  display: none;
+}
+
+.radio-group label {
+  display: inline-block;
+  margin-right: 10px;
+  background: #ccc;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.radio-group input[type="radio"]:checked + label {
+  background: #0e325c;
+  color: white;
+}
+
+.parkingform input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.parkingform button {
+  background: #0e325c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.parkingform button:hover {
+  background: #0a2448;
+}
+
+.list {
+  width: 48%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.list h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.list input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #0e325c;
+  color: white;
+}
+
+/* Additional styles for delete button */
+.delete-button {
+  background: #ff5733;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background: #e94d2e;
+}
+
+/* Add more styles as needed */

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parking Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html"
+          ><img
+            src="parkinglogo-removebg-preview.png"
+            alt="Logo"
+            style="background: white; height: 100px; border-radius: 5px"
+        /></a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <h1>Parking Management System</h1>
+    <div class="container">
+      <div class="parkingform">
+        <h2>Parking Form</h2>
+        <form>
+          <label for="ownerName">Owner Name</label>
+          <input type="text" name="ownerName" id="ownerName" required />
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone" id="phone" required />
+
+          <label for="aadhar">Aadhar Card Number</label>
+          <input type="text" name="aadhar" id="aadhar" required />
+
+          <label for="vehicle">Vehicle Type</label>
+          <div class="radio-group">
+            <input type="radio" name="vehicle" id="car" value="Car" />
+            <label for="car">Car</label>
+
+            <input type="radio" name="vehicle" id="bike" value="Bike" />
+            <label for="bike">Bike</label>
+
+            <input type="radio" name="vehicle" id="bus" value="Bus" />
+            <label for="bus">Bus</label>
+
+            <input type="radio" name="vehicle" id="auto" value="Auto" />
+            <label for="auto">Auto</label>
+          </div>
+
+          <label for="vehicleNumber" id="number">Vehicle Number</label>
+          <input type="text" name="vehicleNumber" id="vehicleNumber" required />
+
+          <button type="submit">Park</button>
+        </form>
+      </div>
+      <div class="list">
+        <h2>List Of Parked Cars</h2>
+        <input type="text" name="search" id="search" placeholder="Search...." />
+
+        <table>
+          <thead>
+            <tr>
+              <th>Owner</th>
+              <th>Vehicle Type</th>
+              <th>License Plate</th>
+              <th>Amount</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
